@@ -6,7 +6,7 @@ aptgetUPDATE  =  'sudo apt-get update'
 os . system ( aptgetUPDATE ) 
 
 #Next, install a few prerequisite packages which let apt use packages over HTTPS: 
-isntallPackages  =  'sudo apt install apt-transport-https ca-certificates curl software-properties-common' 
+isntallPackages  =  'sudo apt install apt-transport-https ca-certificates curl software-properties-common -y' 
 os . system ( isntallPackages ) 
 
 #Then add the GPG key for the official Docker repository to your system: 
@@ -23,12 +23,8 @@ os . system ( Sure )
 
 #Finally, install Docker: 
 print ( "###Enter 'y' and Press 'Enter' to countinue...###" ) 
-installDocker  =  'sudo apt install docker-ce' 
+installDocker  =  'sudo apt install docker-ce -y' 
 os . system ( installDocker ) 
-
-#Check that it’s running: 
-Check  =  'sudo systemctl status docker' 
-os . system ( Check ) 
 
 print ( "Thanks for Using Easy-Docker v1.0 (By:OnlySheikh)" ) 
 print ( "Your Docker Installed Successfully! Enjoy Your Docker... :D" ) 
