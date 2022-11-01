@@ -1,7 +1,7 @@
 # Install Docker So Fast!
 ### Download Script as Python File:
 ```bash
-curl https://raw.githubusercontent.com/OnlySheikh/easy-docker/main/install-docker.py
+curl https://raw.githubusercontent.com/OnlySheikh/easy-docker/main/install-docker.py > /root/docker-install.py
 ```
 ### Run Script:
 ```bash
